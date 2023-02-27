@@ -1,0 +1,170 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+    background-size: cover;
+    font-family: 'Quicksand', sans-serif;
+}
+
+h1{
+    font-weight: 700;
+}
+header{
+    padding-top: auto;
+    padding-bottom: auto;
+    height: 5vh;
+    background-color: #000;
+    color: #fff;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#title-header{
+    font-size: 35px;
+}
+.section-main{
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.containerCep{
+    background-color: rgba(240, 240, 240, 0.342);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.div-cep{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 30px;
+}
+
+#contentCep div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+    margin-bottom: 30px;
+}
+#contentCep p {
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    padding-top: auto;
+    padding-top: auto;
+}
+#contentCep p:hover{
+    background-color: #000;
+    color: #fff;
+    transition: 0.5s;
+    transform: translateY(-5px);
+}
+
+/*Inputs*/
+input[type="submit"]{
+    background-image: linear-gradient(to right, #74ebd5 0%, #9face6 100%);
+    border-radius: 5px;
+    padding: 10px 0;
+    border: none;
+    display: block;
+    font-weight: 500;
+    text-align: center;
+    width: 100%;
+}
+input[type="submit"]:hover{
+    background-image: linear-gradient(to right,#9face6 100%, #74ebd5 0%);
+    transition: 0.5s;
+    transform: translateY(-5px);
+}
+#inputCep{
+    width: 20vw;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    padding: 20px 10px;
+    text-align: center;
+}
+#inputCep:focus{
+    outline: none;
+    border: 1px solid #08df24;
+}
+
+/*Texto de Erro*/
+#divError p {
+    display: block;
+    text-align: center;
+    font-weight: 500;
+    color: rgb(243, 3, 3);
+    visibility: hidden;
+}
+
+footer{
+    background-color: #000;
+    color: #fff;
+    height: 5vh;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Mobile*/
+@media (max-width: 480px){
+    .title-header{
+        font-size: 15vw;
+    }
+    header{
+        height: 8vh;
+    }
+    .section-main{
+        height: 95vh;
+    }
+    #inputCep{
+        width: 250px;
+    }
+    .div-cep{
+        text-align: center;
+        padding: 40px 20px;
+    }
+    #contentCep div{
+        grid-template-columns: 1fr 1fr;
+    }
+    #contentCep div{
+        margin-top: 30px;
+    }
+    .containerCep{
+        margin-top: 20px;
+    }
+    footer{
+        height: 8vh;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1440px){
+    header{
+        height: 10vh;
+    }
+    footer{
+        height: 10vh;
+    }
+    #inputCep{
+        width: 500px !important;
+    }
+}
